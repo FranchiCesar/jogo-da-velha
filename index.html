@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="small-container">
+        <input class="player-field" type="text" placeholder="Jogador 1" />
+        <div class="box-player-field">
+          <input class="player-field-2" type="text" placeholder="Jogador 2" />
+          <div class="switcher">
+            <div class="switcher-ball"></div>
+          </div>
+          <!--switcher-->
+        </div>
+        <!--box-player-field-->
+
+        <div class="box-game-type">
+          <h3 class="game-type-title">Tipo de Partida</h3>
+          <div class="game-type-wrapper">
+            <span class="game-type-md-text">Melhor de 3</span>
+            <div class="switcher switcher-white">
+              <div class="switcher-ball"></div>
+            </div>
+            <!--switcher switcher-white-->
+            <span class="game-type-md-text">Melhor de 5</span>
+          </div>
+          <!--game type wrapper-->
+        </div>
+        <!--box game type-->
+
+        <div class="button-play-wrapper">
+          <button class="button button-green">Jogar</button>
+        </div>
+        <!--button-->
+
+        <div class="match-history-box">
+          <h3 class="match-history-title">Histórico de Partidas</h3>
+
+          <ul class="match-history-list">
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+            <li class="match-history-scenery-wrapper">
+              <div class="match-history-winner-box">
+                <h4 class="winner-label">Vencedor</h4>
+                <span class="winner-name">Jogador 1</span>
+              </div>
+              <span class="match-history-separator">Cenário</span>
+                <div class="scenary-box scenary-small">
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">O</div>
+                  <div class="scenary-field">X</div>
+                  <div class="scenary-field"></div>
+                  <div class="scenary-field">X</div>
+                </div>
+            </li>
+          </ul>
+          <!--match-history-scenery-wrapper-->
+        </div>
+        <!--match history box-->
+        <div class="reset-button-wrapper">
+            <button class="button button-white">Reiniciar</button>
+        </div>
+              </section>
+      <!--Small Container-->
+      <section class="big-container">
+        <div class="scenary-box">
+          <div class="scenary-field">X</div>
+          <div class="scenary-field">O</div>
+          <div class="scenary-field"></div>
+          <div class="scenary-field"></div>
+          <div class="scenary-field"></div>
+          <div class="scenary-field">O</div>
+          <div class="scenary-field">X</div>
+          <div class="scenary-field"></div>
+          <div class="scenary-field">X</div>
+        </div>
+      </section>
+      <section class="small-container"></section>
+    </main>
+  </body>
+</html>
