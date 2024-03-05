@@ -13,8 +13,10 @@
   width: 50%;
   background-color: #2cabebb8;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding: 50px 0;
+  gap: 70px;
 }
 
 .player-field {
@@ -209,10 +211,10 @@
   width: 510px;
 }
 
-.scenary-small{
-    gap: 2px;
-    width: 49px;
-    flex-wrap: wrap;
+.scenary-small {
+  gap: 2px;
+  width: 49px;
+  flex-wrap: wrap;
 }
 
 .scenary-small .scenary-field {
@@ -222,37 +224,118 @@
   border-radius: 2px;
 }
 
-.match-history-list{
-    display: flex;
-    flex-direction: column;
-    max-height: 280px;
-    gap: 20px;
-    overflow: auto;
-    padding: 6px;
+.match-history-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 280px;
+  gap: 20px;
+  overflow: auto;
+  padding: 6px;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 2px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 2px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+  width: 5px;
+}
 
-  .reset-button-wrapper{
-    margin-top: 98px;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.reset-button-wrapper {
+  margin-top: 98px;
+}
+
+.scoreboard {
+  background-color: #fff;
+  width: 60%;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  color: #2ba9ea;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.scoreboard-separator {
+  color: #828282;
+}
+
+.scoreboard-title {
+  font-size: 25px;
+  color: #2ba9ea;
+}
+
+.score-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.history-move-card {
+  display: flex;
+  width: 80%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 10px;
+  gap: 16px;
+}
+
+.move-name {
+  font-size: 48px;
+  color: #828282;
+  font-weight: 700;
+}
+
+.move-player-name {
+  font-size: 14px;
+  color: #828282;
+  font-weight: 700;
+}
+
+.move-lable {
+  font-size: 14px;
+  color: #2ba9ea;
+}
+
+.move-player-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-move-title {
+  color: #fff;
+  text-align: center;
+}
+
+.history-card-list {
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 70%;
+  overflow: auto;
+}
